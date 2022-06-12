@@ -69,3 +69,36 @@ export const SubmitButton = styled.button.attrs(props => ({
     `
   }
 `;
+
+export const List = styled.ul`
+  list-style: none;
+  margin-top: 20px;
+
+  li {
+    align-items    : center;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    padding        : 15px 0;
+
+    & + li {
+      border-top: 1px solid #eeeeee;
+    }
+
+    a {
+      color          : #0D2636;
+      text-decoration: none;
+    }
+  }
+`;
+
+export const DeleteButton = styled.button.attrs({
+  type: 'button'
+})`
+  background   : transparent;
+  border       : 0;
+  border-radius: 4px;
+  color        : #0D2636;
+  padding      : 8px 7px;
+  outline      : 0;
+`;
