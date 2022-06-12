@@ -34,7 +34,9 @@ export const Form = styled.form`
   }
 `;
 
-export const SubmitButton = styled.button`
+export const SubmitButton = styled.button.attrs({
+  type: 'submit'
+})`
   align-items    : center;
   background     : #0d2636;
   border         : 0;
