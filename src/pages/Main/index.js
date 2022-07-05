@@ -4,6 +4,7 @@ import { Container, Form, SubmitButton, List, DeleteButton } from './styles';
 
 import api from '../../services/api';
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Main() {
 
@@ -101,9 +102,9 @@ export default function Main() {
 
               {repo.name}
             </span>
-            <a href="/">
+            <Link to={`/repositorio/${encodeURIComponent(repo.name)}`}>
               <FaBars size={20} />
-            </a>
+            </Link>
           </li>
         ))}
       </List>
