@@ -107,3 +107,23 @@ export const IssuesList = styled.ul`
     }
   }
 `;
+
+export const PageActions = styled.div`
+  align-items    : center;
+  display        : flex;
+  justify-content: space-between;
+
+  button {
+    background   : #222222;
+    border       : 0;
+    border-radius: 4px;
+    color        : #FFFFFF;
+    outline      : 0;
+    padding      : 5px 10px;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor : not-allowed;
+    }
+  }
+`;
