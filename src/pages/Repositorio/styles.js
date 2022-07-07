@@ -122,8 +122,26 @@ export const PageActions = styled.div`
     padding      : 5px 10px;
 
     &:disabled {
-      opacity: 0.5;
       cursor : not-allowed;
+      opacity: 0.5;
     }
   }
+`;
+
+export const FilterList = styled.div`
+  margin: 15px 0;
+
+  button {
+    border       : 0;
+    border-radius: 4px;
+    margin       : 0 3px;
+    outline      : 0;
+    padding      : 8px;
+    
+    &:nth-child(${props => props.active + 1}){
+      background: #0071DB;
+      color     : #FFFFFF;
+    }
+  }
+
 `;
